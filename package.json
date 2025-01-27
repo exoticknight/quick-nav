@@ -1,6 +1,6 @@
 {
   "name": "quick-nav",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Swift cursor navigation plugin to enhance editing",
   "main": "main.js",
   "scripts": {
