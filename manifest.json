@@ -1,11 +1,11 @@
 {
-	"id": "quick-nav",
-	"name": "Quick Nav",
-	"version": "1.0.0",
-	"minAppVersion": "0.15.0",
-	"description": "Swift cursor navigation plugin to enhance editing",
-	"author": "ExoticKnight",
-	"authorUrl": "https://github.com/exoticknight",
-	"fundingUrl": "https://github.com/exoticknight",
-	"isDesktopOnly": true
+  "id": "quick-nav",
+  "name": "Quick Nav",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Swift cursor navigation plugin to enhance editing",
+  "author": "ExoticKnight",
+  "authorUrl": "https://github.com/exoticknight",
+  "fundingUrl": "https://github.com/exoticknight",
+  "isDesktopOnly": true
 }
