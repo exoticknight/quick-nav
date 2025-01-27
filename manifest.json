@@ -1,11 +1,11 @@
 {
-	"id": "sample-plugin",
-	"name": "Sample Plugin",
+	"id": "quick-nav",
+	"name": "Quick Nav",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "Demonstrates some of the capabilities of the Obsidian API.",
-	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md",
-	"fundingUrl": "https://obsidian.md/pricing",
-	"isDesktopOnly": false
+	"description": "Swift cursor navigation plugin to enhance editing",
+	"author": "ExoticKnight",
+	"authorUrl": "https://github.com/exoticknight",
+	"fundingUrl": "https://github.com/exoticknight",
+	"isDesktopOnly": true
 }
