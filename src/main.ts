@@ -9,7 +9,7 @@ import { Command, EditorView } from "@codemirror/view";
 import { CursorMove, CursorSelect } from "./codeMirrorCommand";
 import { Platform } from "./constraints";
 
-export default class MyPlugin extends Plugin {
+export default class QuickNavPlugin extends Plugin {
 	async onload() {
 		let platform: Platform = Platform.Windows;
 		if (OBPlatform.isMacOS) {
