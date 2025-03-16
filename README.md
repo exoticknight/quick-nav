@@ -1,12 +1,16 @@
 # Quick Nav
 
-English | [中文](./README.zh-cn.md)
+English | [中文](./README.zh-cn.md) | [日本語](./README.ja.md)
 
-Swift cursor navigation plugin to enhance editing.
+Enhance your editing experience by unleashing the hidden power of shortcuts. 
 
 ## Usage
 
-### Cursor Move
+Quick Nav exposes powerful navigation operations without binding default shortcuts. This gives you the freedom to customize your editing experience according to your preferences.
+
+Below are our **recommended shortcut bindings** that you can set up in Obsidian's Hotkeys settings:
+
+### Recommended Cursor Movement Shortcuts
 
 -   **Move Cursor Up**: `Alt + I` (Windows/Linux), `Ctrl + I` (MacOS)
 -   **Move Cursor Down**: `Alt + K` (Windows/Linux), `Ctrl + K` (MacOS)
@@ -17,7 +21,7 @@ Swift cursor navigation plugin to enhance editing.
 -   **Move Cursor Left End**: `Alt + H` (Windows/Linux), `Ctrl + H` (MacOS)
 -   **Move Cursor Right End**: `Alt + ;` (Windows/Linux), `Ctrl + ;` (MacOS)
 
-### Cursor Select
+### Recommended Cursor Selection Shortcuts
 
 -   **Select Cursor Up**: `Alt + Shift + I` (Windows/Linux), `Ctrl + Shift + I` (MacOS)
 -   **Select Cursor Down**: `Alt + Shift + K` (Windows/Linux), `Ctrl + Shift + K` (MacOS)
@@ -25,6 +29,13 @@ Swift cursor navigation plugin to enhance editing.
 -   **Select Cursor Right**: `Alt + Shift + L` (Windows/Linux), `Ctrl + Shift + L` (MacOS)
 -   **Select Cursor Left End**: `Alt + Shift + H` (Windows/Linux), `Ctrl + Shift + H` (MacOS)
 -   **Select Cursor Right End**: `Alt + Shift + ;` (Windows/Linux), `Ctrl + Shift + ;` (MacOS)
+
+### Setting Up Your Shortcuts
+
+1. Open Obsidian Settings
+2. Go to "Hotkeys"
+3. Search for "Quick Nav"
+4. Assign your preferred shortcuts to each operation
 
 ## Installation
 

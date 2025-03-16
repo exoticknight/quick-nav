@@ -8,83 +8,40 @@ import {
 	selectLineBoundaryLeft,
 	selectLineBoundaryRight,
 } from "@codemirror/commands";
-import { Platform } from "src/constraints";
 
 export const CursorSelect: {
 	id: string;
 	name: string;
-	modifiers: {
-		[Platform.Windows]: Modifier[];
-		[Platform.MacOS]: Modifier[];
-		[Platform.Linux]: Modifier[];
-	};
-	key: string;
 	commandFn: Command;
 }[] = [
-	{
-		id: "quick-nav-select-cursor-up",
-		name: "Select Cursor Up",
-		modifiers: {
-			[Platform.Windows]: ["Alt", "Shift"],
-			[Platform.MacOS]: ["Ctrl", "Shift"],
-			[Platform.Linux]: ["Alt", "Shift"],
+		{
+			id: "quick-nav-select-cursor-up",
+			name: "Select Cursor Up",
+			commandFn: selectLineUp,
 		},
-		key: "I",
-		commandFn: selectLineUp,
-	},
-	{
-		id: "quick-nav-select-cursor-down",
-		name: "Select Cursor Down",
-		modifiers: {
-			[Platform.Windows]: ["Alt", "Shift"],
-			[Platform.MacOS]: ["Ctrl", "Shift"],
-			[Platform.Linux]: ["Alt", "Shift"],
+		{
+			id: "quick-nav-select-cursor-down",
+			name: "Select Cursor Down",
+			commandFn: selectLineDown,
 		},
-		key: "K",
-		commandFn: selectLineDown,
-	},
-	{
-		id: "quick-nav-select-cursor-left",
-		name: "Select Cursor Left",
-		modifiers: {
-			[Platform.Windows]: ["Alt", "Shift"],
-			[Platform.MacOS]: ["Ctrl", "Shift"],
-			[Platform.Linux]: ["Alt", "Shift"],
+		{
+			id: "quick-nav-select-cursor-left",
+			name: "Select Cursor Left",
+			commandFn: selectCharLeft,
 		},
-		key: "J",
-		commandFn: selectCharLeft,
-	},
-	{
-		id: "quick-nav-select-cursor-right",
-		name: "Select Cursor Right",
-		modifiers: {
-			[Platform.Windows]: ["Alt", "Shift"],
-			[Platform.MacOS]: ["Ctrl", "Shift"],
-			[Platform.Linux]: ["Alt", "Shift"],
+		{
+			id: "quick-nav-select-cursor-right",
+			name: "Select Cursor Right",
+			commandFn: selectCharRight,
 		},
-		key: "L",
-		commandFn: selectCharRight,
-	},
-	{
-		id: "quick-nav-select-cursor-left-end",
-		name: "Select Cursor Left End",
-		modifiers: {
-			[Platform.Windows]: ["Alt", "Shift"],
-			[Platform.MacOS]: ["Ctrl", "Shift"],
-			[Platform.Linux]: ["Alt", "Shift"],
+		{
+			id: "quick-nav-select-cursor-left-end",
+			name: "Select Cursor Left End",
+			commandFn: selectLineBoundaryLeft,
 		},
-		key: "H",
-		commandFn: selectLineBoundaryLeft,
-	},
-	{
-		id: "quick-nav-select-cursor-right-end",
-		name: "Select Cursor Right End",
-		modifiers: {
-			[Platform.Windows]: ["Alt", "Shift"],
-			[Platform.MacOS]: ["Ctrl", "Shift"],
-			[Platform.Linux]: ["Alt", "Shift"],
+		{
+			id: "quick-nav-select-cursor-right-end",
+			name: "Select Cursor Right End",
+			commandFn: selectLineBoundaryRight,
 		},
-		key: ";",
-		commandFn: selectLineBoundaryRight,
-	},
-];
+	];

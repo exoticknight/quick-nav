@@ -10,105 +10,50 @@ import {
 	cursorLineBoundaryLeft,
 	cursorLineBoundaryRight,
 } from "@codemirror/commands";
-import { Platform } from "src/constraints";
 
 export const CursorMove: {
 	id: string;
 	name: string;
-	modifiers: {
-		[Platform.Windows]: Modifier[];
-		[Platform.MacOS]: Modifier[];
-		[Platform.Linux]: Modifier[];
-	};
-	key: string;
 	commandFn: Command;
 }[] = [
-	{
-		id: "quick-nav-move-cursor-up",
-		name: "Move Cursor Up",
-		modifiers: {
-			[Platform.Windows]: ["Alt"],
-			[Platform.MacOS]: ["Ctrl"],
-			[Platform.Linux]: ["Alt"],
+		{
+			id: "quick-nav-move-cursor-up",
+			name: "Move Cursor Up",
+			commandFn: cursorLineUp,
 		},
-		key: "I",
-		commandFn: cursorLineUp,
-	},
-	{
-		id: "quick-nav-move-cursor-down",
-		name: "Move Cursor Down",
-		modifiers: {
-			[Platform.Windows]: ["Alt"],
-			[Platform.MacOS]: ["Ctrl"],
-			[Platform.Linux]: ["Alt"],
+		{
+			id: "quick-nav-move-cursor-down",
+			name: "Move Cursor Down",
+			commandFn: cursorLineDown,
 		},
-		key: "K",
-		commandFn: cursorLineDown,
-	},
-	{
-		id: "quick-nav-move-cursor-left",
-		name: "Move Cursor Left",
-		modifiers: {
-			[Platform.Windows]: ["Alt"],
-			[Platform.MacOS]: ["Ctrl"],
-			[Platform.Linux]: ["Alt"],
+		{
+			id: "quick-nav-move-cursor-left",
+			name: "Move Cursor Left",
+			commandFn: cursorCharLeft,
 		},
-		key: "J",
-		commandFn: cursorCharLeft,
-	},
-	{
-		id: "quick-nav-move-cursor-right",
-		name: "Move Cursor Right",
-		modifiers: {
-			[Platform.Windows]: ["Alt"],
-			[Platform.MacOS]: ["Ctrl"],
-			[Platform.Linux]: ["Alt"],
+		{
+			id: "quick-nav-move-cursor-right",
+			name: "Move Cursor Right",
+			commandFn: cursorCharRight,
 		},
-		key: "L",
-		commandFn: cursorCharRight,
-	},
-	{
-		id: "quick-nav-move-cursor-page-up",
-		name: "Move Cursor Page Up",
-		modifiers: {
-			[Platform.Windows]: ["Alt"],
-			[Platform.MacOS]: ["Ctrl"],
-			[Platform.Linux]: ["Alt"],
+		{
+			id: "quick-nav-move-cursor-page-up",
+			name: "Move Cursor Page Up",
+			commandFn: cursorPageUp,
 		},
-		key: "U",
-		commandFn: cursorPageUp,
-	},
-	{
-		id: "quick-nav-move-cursor-page-down",
-		name: "Move Cursor Page Down",
-		modifiers: {
-			[Platform.Windows]: ["Alt"],
-			[Platform.MacOS]: ["Ctrl"],
-			[Platform.Linux]: ["Alt"],
+		{
+			id: "quick-nav-move-cursor-page-down",
+			name: "Move Cursor Page Down",
+			commandFn: cursorPageDown,
 		},
-		key: "O",
-		commandFn: cursorPageDown,
-	},
-	{
-		id: "quick-nav-move-cursor-left-end",
-		name: "Move Cursor Left End",
-		modifiers: {
-			[Platform.Windows]: ["Alt"],
-			[Platform.MacOS]: ["Ctrl"],
-			[Platform.Linux]: ["Alt"],
+		{
+			id: "quick-nav-move-cursor-left-end",
+			name: "Move Cursor Left End",
+			commandFn: cursorLineBoundaryLeft,
 		},
-		key: "H",
-		commandFn: cursorLineBoundaryLeft,
-	},
-	{
-		id: "quick-nav-move-cursor-right-end",
-		name: "Move Cursor Right End",
-		modifiers: {
-			[Platform.Windows]: ["Alt"],
-			[Platform.MacOS]: ["Ctrl"],
-			[Platform.Linux]: ["Alt"],
+		{
+			id: "quick-nav-move-cursor-right-end",
+			name: "Move Cursor Right End",
+			commandFn: cursorLineBoundaryRight,
 		},
-		key: ";",
-		commandFn: cursorLineBoundaryRight,
-	},
-];
+	];
