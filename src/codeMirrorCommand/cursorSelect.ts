@@ -1,4 +1,3 @@
-import type { Modifier } from "obsidian";
 import type { Command } from "@codemirror/view";
 import {
 	selectCharLeft,
@@ -15,33 +14,33 @@ export const CursorSelect: {
 	commandFn: Command;
 }[] = [
 		{
-			id: "quick-nav-select-cursor-up",
-			name: "Select Cursor Up",
+			id: "select-cursor-up",
+			name: "Select cursor up",
 			commandFn: selectLineUp,
 		},
 		{
-			id: "quick-nav-select-cursor-down",
-			name: "Select Cursor Down",
+			id: "select-cursor-down",
+			name: "Select cursor down",
 			commandFn: selectLineDown,
 		},
 		{
-			id: "quick-nav-select-cursor-left",
-			name: "Select Cursor Left",
+			id: "select-cursor-left",
+			name: "Select cursor left",
 			commandFn: selectCharLeft,
 		},
 		{
-			id: "quick-nav-select-cursor-right",
-			name: "Select Cursor Right",
+			id: "select-cursor-right",
+			name: "Select cursor right",
 			commandFn: selectCharRight,
 		},
 		{
-			id: "quick-nav-select-cursor-left-end",
-			name: "Select Cursor Left End",
+			id: "select-cursor-left-end",
+			name: "Select cursor left end",
 			commandFn: selectLineBoundaryLeft,
 		},
 		{
-			id: "quick-nav-select-cursor-right-end",
-			name: "Select Cursor Right End",
+			id: "select-cursor-right-end",
+			name: "Select cursor right end",
 			commandFn: selectLineBoundaryRight,
 		},
 	];

@@ -1,4 +1,3 @@
-import type { Modifier } from "obsidian";
 import type { Command } from "@codemirror/view";
 import {
 	cursorCharLeft,
@@ -17,43 +16,43 @@ export const CursorMove: {
 	commandFn: Command;
 }[] = [
 		{
-			id: "quick-nav-move-cursor-up",
-			name: "Move Cursor Up",
+			id: "move-cursor-up",
+			name: "Move cursor up",
 			commandFn: cursorLineUp,
 		},
 		{
-			id: "quick-nav-move-cursor-down",
-			name: "Move Cursor Down",
+			id: "move-cursor-down",
+			name: "Move cursor down",
 			commandFn: cursorLineDown,
 		},
 		{
-			id: "quick-nav-move-cursor-left",
-			name: "Move Cursor Left",
+			id: "move-cursor-left",
+			name: "Move cursor left",
 			commandFn: cursorCharLeft,
 		},
 		{
-			id: "quick-nav-move-cursor-right",
-			name: "Move Cursor Right",
+			id: "move-cursor-right",
+			name: "Move cursor right",
 			commandFn: cursorCharRight,
 		},
 		{
-			id: "quick-nav-move-cursor-page-up",
-			name: "Move Cursor Page Up",
+			id: "move-cursor-page-up",
+			name: "Move cursor page up",
 			commandFn: cursorPageUp,
 		},
 		{
-			id: "quick-nav-move-cursor-page-down",
-			name: "Move Cursor Page Down",
+			id: "move-cursor-page-down",
+			name: "Move cursor page down",
 			commandFn: cursorPageDown,
 		},
 		{
-			id: "quick-nav-move-cursor-left-end",
-			name: "Move Cursor Left End",
+			id: "move-cursor-left-end",
+			name: "Move cursor left end",
 			commandFn: cursorLineBoundaryLeft,
 		},
 		{
-			id: "quick-nav-move-cursor-right-end",
-			name: "Move Cursor Right End",
+			id: "move-cursor-right-end",
+			name: "Move cursor right end",
 			commandFn: cursorLineBoundaryRight,
 		},
 	];

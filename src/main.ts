@@ -1,5 +1,5 @@
 import {
-	MarkdownView,
+	Editor,
 	Plugin,
 } from "obsidian";
 import { Command, EditorView } from "@codemirror/view";
@@ -33,18 +33,14 @@ export default class QuickNavPlugin extends Plugin {
 		this.addCommand({
 			id,
 			name,
-			callback: () => this.getEditorViewToExecCommand(commandFn),
+			editorCallback: (editor) => this.getEditorViewToExecCommand(editor, commandFn)
 		});
 	}
 
-	getEditorViewToExecCommand(command: Command): boolean {
-		const view = this.app.workspace.getActiveViewOfType(MarkdownView);
-		if (view) {
-			// @ts-expect-error, not typed
-			const editorView = view.editor.cm as EditorView;
-			return command(editorView);
-		}
-		return false;
+	getEditorViewToExecCommand(editor: Editor, command: Command): boolean {
+		// @ts-expect-error, not typed
+		const editorView = editor.cm as EditorView;
+		return command(editorView);
 	}
 
 	onunload() { }
