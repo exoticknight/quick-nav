@@ -1,10 +1,10 @@
 {
-	"id": "quick-nav",
-	"name": "Quick Nav",
-	"version": "1.0.5",
-	"minAppVersion": "0.15.0",
-	"description": "Enhance your editing experience by unleashing the hidden power of shortcuts",
-	"author": "ExoticKnight",
-	"authorUrl": "https://github.com/exoticknight",
-	"isDesktopOnly": true
+  "id": "quick-nav",
+  "name": "Quick Nav",
+  "version": "1.0.6",
+  "minAppVersion": "0.15.0",
+  "description": "Enhance your editing experience by unleashing the hidden power of shortcuts",
+  "author": "ExoticKnight",
+  "authorUrl": "https://github.com/exoticknight",
+  "isDesktopOnly": true
 }
